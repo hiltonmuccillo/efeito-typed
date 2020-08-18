@@ -1,0 +1,48 @@
+.typewriter {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+}
+
+.typewriter-to-right {
+    line-height: 35px;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 2s steps(30, end), blink .75s step-end infinite;                                  
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid green;
+    box-sizing: border-box;
+}
+
+.typewriter-to-left {
+    line-height: 35px;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 2s steps(30, end) reverse, blink .75s step-end infinite;                                  
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid green;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    0% { 
+        width: 0% 
+    }
+    100% { 
+        width: 100% 
+    }
+} 
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: green; 
+    }
+}
