@@ -1,48 +1,102 @@
-.typewriter {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+.centraliza {
+    width: 100vw;
+    height: 100vh;            
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.interna {
+    width: 600px;
+    height: auto;            
+}
+/* Typed CSS3 */
+#typed {    
     display: inline-block;
 }
 
-.typewriter-to-right {
-    line-height: 35px;
+.typed1 {
+    text-align: left;    
+    padding: 5px 0px 5px 15px;
+    line-height: 50px;
     display: inline-block;
-    overflow: hidden;
-    letter-spacing: 2px;
-    animation: typing 2s steps(30, end), blink .75s step-end infinite;                                  
+    overflow: hidden;    
+    animation: typing 1s steps(30, end);                         
     white-space: nowrap;
-    font-size: 30px;
-    font-weight: 700;
-    border-right: 4px solid green;
+    /* background-image: linear-gradient(to right, rgba(68, 97, 114, .5), rgba(0, 0, 0, .5));         */
     box-sizing: border-box;
 }
 
-.typewriter-to-left {
-    line-height: 35px;
+.typed2 {
+    text-align: left;    
+    padding: 5px 0px 5px 15px;
+    line-height: 50px;
     display: inline-block;
-    overflow: hidden;
-    letter-spacing: 2px;
-    animation: typing 2s steps(30, end) reverse, blink .75s step-end infinite;                                  
+    overflow: hidden;    
+    animation: typing 1s steps(30, end) reverse;                                  
     white-space: nowrap;
-    font-size: 30px;
-    font-weight: 700;
-    border-right: 4px solid green;
+    /* background-image: linear-gradient(to right, rgba(68, 97, 114, .5), rgba(0, 0, 0, .5)); */
     box-sizing: border-box;
 }
 
 @keyframes typing {
     0% { 
-        width: 0% 
+        width: 0%;
+        
     }
+    
     100% { 
-        width: 100% 
+        width: 100%;
+        
     }
-} 
+}
+
+.cursor-blink:after {                    
+    position: relative;
+    top: -23px;
+    content : "";            
+    border-right: 12px solid #fff;
+    animation: blink .75s step-end infinite;
+}
 
 @keyframes blink {
-    from, to { 
-        border-color: transparent 
+    0% { 
+        width: 0%;
+        border-color: #fff; 
     }
-    50% { 
-        border-color: green; 
+    
+    50% {
+        width: 50%; 
+        border-color: transparent; 
+        
     }
+    
+    0%, 100% { 
+        width: 100%;
+        border-color: #fff; 
+    }
+}
+
+.forte, .verde {
+    color: #4caf50 !important;
+    font-weight: 700
+}
+
+.forte2, .amarelo {
+    color: #cddc39 !important;
+    font-weight: 700
+}
+
+.forte3, .azul {
+    color: #03A9F4 !important;
+    font-weight: 700
 }
